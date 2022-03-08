@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1224px) {
+  .movie {
+    width: 300px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
+
+    .image {
+      border-radius: 2em 2em 0 0;
+      max-width: 100%;
+    }
+    .bot-button {
+        margin-top: -1.5em;
+        z-index: 1;
+        height: 4.6em;
+        background-color: #282828;
+        .title {
+           padding-top: 0.4em;
+           padding-left: 0.3em;
+        }
+        .icon {
+            color:rgb(255, 200, 19);
+            font-size: 1.8em;
+            position: relative;
+            top: -2.5em;
+            left: 8.8em;
+        }
+      }
+      
+  }
+
+}
