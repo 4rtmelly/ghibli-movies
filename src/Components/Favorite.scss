@@ -1,5 +1,5 @@
 @media only screen and (min-width: 1224px) {
-  .movie {
+  .favorite {
     width: 300px;
     .image {
       border-radius: 2em 2em 0 0;
@@ -17,7 +17,7 @@
         padding-left: 0.3em;
       }
       .icon {
-        color: rgb(255, 200, 19);
+        color: white;
         font-size: 1.8em;
       }
       .icon:hover {
@@ -28,7 +28,7 @@
 }
 
 @media only screen and (max-width: 1224px) {
-  .movie {
+  .favorite {
     width: 200px;
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -51,7 +51,8 @@
         padding-left: 0.3em;
       }
       .icon {
-        color: rgb(255, 200, 19);
+        color: white;
+
         font-size: 1.8em;
       }
       .icon:hover {
