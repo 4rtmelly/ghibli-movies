@@ -37,7 +37,7 @@ const Movie = () => {
   return movies.map((movie, index) => {
     return (
       <div key={index} className="movie">
-        <img className="image" src={movie.image} />
+        <img className="image" src={movie.image} alt={movie.title} />
         <div className="bot-button">
           <h2 className="title"> {movie.title} </h2>
           <FaStar

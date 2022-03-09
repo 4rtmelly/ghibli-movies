@@ -7,15 +7,8 @@ const Favorite = () => {
   // On recupère les ID qui ont été Set dans le localStorage avec la méthode
   // getItem, les ID sont donc maintenant dans un tableau
   const [movies, setMovies] = useState([]);
-  const [id, setId] = useState(JSON.parse(localStorage.getItem("idMovies")));
+  const [id] = useState(JSON.parse(localStorage.getItem("idMovies")));
 
-  const deleteFav = (movieId) => {
-    {
-      console.log(movieId);
-    }
-    const newId = [...id, movieId];
-    setId(newId);
-  };
 
   useEffect(() => {
     fetch(moviesApi)
@@ -34,12 +27,12 @@ const Favorite = () => {
       if (id[i] === movie.id) {
         return (
           <div key={i} className="favorite">
-            <img className="image" src={movie.image} />
+            <img className="image" src={movie.image} alt={movie.title}/>
             <div className="bot-button">
               <h2 className="title"> {movie.title} </h2>
               <ImBin
                 key={index}
-                onClick={() => deleteFav(movie.id)}
+                // onClick={() => deleteFav(movie.id)}
                 className="icon"
               />
             </div>
